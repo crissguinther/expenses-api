@@ -13,6 +13,15 @@
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1"
   },
+  "scripts": {
+    "run:database": "docker run -p 5432:5432 expenses-db",
+<<<<<<< HEAD
+    "build:database": "docker build -t expenses-db -f ./docker/database/.dockerfile ."
+=======
+    "build:database": "docker build -t expenses-db -f ./docker/database/.dockerfile .",
+    "test": "jest"
+>>>>>>> 13677f9 (sla)
+  },
   "dependencies": {
     "express": "^4.18.2"
   }
