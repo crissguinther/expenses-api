@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {   
+    "target": "es2016",
+    "module": "ES2015",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,    
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "@controllers/*": ["./controllers"],
+      "@common/*": ["./common"],
+      "@config/*": ["./config"]
+    }
+  }
+}

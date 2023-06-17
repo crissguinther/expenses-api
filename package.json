@@ -8,7 +8,9 @@
   "private": true,
   "devDependencies": {
     "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.2",
     "@types/node": "^20.2.5",
+    "jest": "^29.5.0",
     "nodemon": "^2.0.22",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1"
@@ -16,13 +18,18 @@
   "scripts": {
     "run:database": "docker run -p 5432:5432 expenses-db",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "build:database": "docker build -t expenses-db -f ./docker/database/.dockerfile ."
 =======
     "build:database": "docker build -t expenses-db -f ./docker/database/.dockerfile .",
     "test": "jest"
 >>>>>>> 13677f9 (sla)
+=======
+    "test": "jest"
+>>>>>>> 78b3faa (feat: Logger)
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "typescript": "^5.1.3"
   }
 }
