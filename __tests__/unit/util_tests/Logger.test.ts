@@ -1,8 +1,8 @@
 import 'jest';
 
 import { existsSync, readdirSync, rmdir } from 'fs';
-import { Logger } from '../../src/util/Logger';
-import { LogLevel } from '../../src/enum/LogLevel';
+import { Logger } from '../../../src/util/Logger';
+import { LogLevel } from '../../../src/enum/LogLevel';
 
 describe('Test the logger functions and its functionality', () => {
   const logger = new Logger();

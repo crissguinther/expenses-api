@@ -1,7 +1,7 @@
 import 'jest';
-import { UserRepository } from '../../src/repositories/UserRepository';
-import { UserRequest } from '../../src/types/UserRequest';
-import { Validator } from '../../src/util/Validator';
+import { UserRepository } from '../../../src/repositories/UserRepository';
+import { UserRequest } from '../../../src/types/request/UserRequest';
+import { Validator } from '../../../src/util/Validator';
 import { PrismaClient } from '@prisma/client';
 
 const privatePrisma = new PrismaClient();

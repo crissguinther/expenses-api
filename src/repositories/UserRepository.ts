@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 import bcryptjs from 'bcryptjs';
 import { ApplicationConfig } from '../config/ApplicationConfig';
-import { UserRequest } from '../types/UserRequest';
+import { UserRequest } from '../types/request/UserRequest';
 import { Logger } from '../util/Logger';
 import { LogLevel } from '../enum/LogLevel';
 import { Validator } from '../util/Validator';

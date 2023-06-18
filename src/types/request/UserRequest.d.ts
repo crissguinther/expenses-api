@@ -1,4 +1,4 @@
-import { UserPersonalInfo } from './PersonalInfo';
+import { UserPersonalInfo } from '../PersonalInfo';
 
 export type UserRequest = {
   email: string;
