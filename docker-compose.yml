@@ -1,0 +1,14 @@
+version: '0.0.1'
+services:
+  database:
+    build:
+      context: .
+      dockerfile: ./docker/database/.dockerfile
+    container_name: expenses-api-database
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+volumes:
+  postgres:

@@ -16,17 +16,10 @@
     "ts-node": "^10.9.1"
   },
   "scripts": {
-    "run:database": "docker run -p 5432:5432 expenses-db",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "build:database": "docker build -t expenses-db -f ./docker/database/.dockerfile ."
-=======
-    "build:database": "docker build -t expenses-db -f ./docker/database/.dockerfile .",
+    "run:database": "docker run --name expenses-database -p 5432:5432 --mount source=postgres,target=/var/lib/postgresql/data/ expenses-db",
+    "build:database:volume": "docker volume create postgres",
+    "build:database:image": "docker build -t expenses-db -f ./docker/database/.dockerfile .",
     "test": "jest"
->>>>>>> 13677f9 (sla)
-=======
-    "test": "jest"
->>>>>>> 78b3faa (feat: Logger)
   },
   "dependencies": {
     "express": "^4.18.2",
